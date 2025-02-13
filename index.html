@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <title>我的GitHub项目</title>
+    <title>个人部分项目展示</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="images/book.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <h1>个人主要开源项目</h1>
+      <h1>个人部分项目展示</h1>
       <nav>
         <ul>
           <li><a href="https://github.com/Bugday001" target="_blank">GitHub 主页</a></li>
@@ -24,7 +25,7 @@
           <div class="project-info">
             <h2>大型火电锅炉封闭炉膛水冷壁无人机自动巡检系统</h2>
             <p class="description">基于指标要求完成激光雷达、电机电调等元器件选型和无人机机体设计。基于ROS框架，改良三维激光SLAM算法，建立锅炉炉膛模型并实现炉内精确定位；设计路径规划算法，根据总控平台要求自主巡检。编写图传服务端，实现检测图像和飞行状态的时空绑定与远程回传。
-            <a href="https://github.com/Bugday001/guolu_uav" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/guolu_uav" target="_blank" class="project-link">GitHub链接</a>
             <a href="https://www.bilibili.com/video/BV1q1KpeAEUq" target="_blank" class="project-link">视频链接</a>
           </div>
         </div>
@@ -39,7 +40,7 @@
               <div class="project-info">
                   <h2>二维激光SLAM</h2>
                   <p class="description">二维纯激光里程计，使用Ceres作为优化器，未使用点云处理库PCL。手写点云类，kd-tree和一个简单的帧间匹配算法。使用智能指针和Openmp等多种手段来优化代码。</p>
-                  <a href="https://github.com/Bugday001/2D_SLAM" target="_blank" class="project-link">查看项目</a>
+                  <a href="https://github.com/Bugday001/2D_SLAM" target="_blank" class="project-link">GitHub链接</a>
               </div>
             </div>
 
@@ -51,7 +52,7 @@
               <div class="project-info">
                   <h2>二维轨迹规划</h2>
                   <p class="description">基于开源项目实现了一个根据安全飞行走廊的轨迹规划器。使用分段多项式生成平滑且动态可行的轨迹，优化目标包括最小化轨迹的高阶导数。修改了原项目的错误，优化了代码逻辑，实现了传感器模拟与重规划逻辑。</p>
-                  <a href="https://github.com/Bugday001/Planner2D" target="_blank" class="project-link">查看项目</a>
+                  <a href="https://github.com/Bugday001/Planner2D" target="_blank" class="project-link">GitHub链接</a>
               </div>
             </div>
         </div>
@@ -64,7 +65,7 @@
           <div class="project-info">
             <h2>XIO_SLAM: 三维激光IMU紧耦合里程计</h2>
             <p class="description">一个三维激光雷达IMU紧耦合里程计。基于DLO算法，添加IMU的预积分、点云去畸变和多传感器联合优化部分。使用图优化工具g2o实现了多传感器融合，输出最终的估计位姿。</p>
-            <a href="https://github.com/Bugday001/XIO_SLAM" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/XIO_SLAM" target="_blank" class="project-link">GitHub链接</a>
           </div>
         </div>
         <!-- 项目 4 -->
@@ -75,7 +76,7 @@
           <div class="project-info">
             <h2>手搓AR: 只依赖opencv基础库的AR实现</h2>
             <p class="description">一个基于姿态估计的增强现实（AR）实现项目，旨在使用最少的OpenCV函数实现手搓AR效果。该项目通过在真实空间中检测和估计目标物体的姿态（位置和方向），将虚拟模型或图片叠加到现实场景中，从而实现简单的增强现实效果。</p>
-            <a href="https://github.com/Bugday001/Pose-estimation-and-AR" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/Pose-estimation-and-AR" target="_blank" class="project-link">GitHub链接</a>
             <a href="https://www.bilibili.com/video/BV1oB4y1a7cD" target="_blank" class="project-link">视频链接</a>
           </div>
         </div>
@@ -87,7 +88,7 @@
           <div class="project-info">
             <h2>EdgeDigits: 嵌入式手写数字识别</h2>
             <p class="description">基于STM32H7微控制器的手写数字识别项目，展示了在嵌入式设备上运行深度学习模型的能力。通过串口发送手写数字图片，STM32H7利用轻量级模型（TensorFlow Lite）进行实时推理并在LCD屏幕上显示图片与推理结果。</p>
-            <a href="https://github.com/Bugday001/STM32-Deeplearning" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/STM32-Deeplearning" target="_blank" class="project-link">GitHub链接</a>
           </div>
         </div>
         <!-- 项目 6 -->
@@ -98,7 +99,7 @@
           <div class="project-info">
             <h2>PuzzleSolver: 强化学习解八数码</h2>
             <p class="description">一个基于强化学习解决八数码难题的项目。八数码难题的目标是通过移动滑块将乱序的数字排列恢复到正确顺序。本项目先分割识别问题再通过实现强化学习算法，训练智能体自动学习解决八数码难题的策略。</p>
-            <a href="https://github.com/Bugday001/STM32-Deeplearning" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/STM32-Deeplearning" target="_blank" class="project-link">GitHub链接</a>
             <a href="https://www.bilibili.com/video/BV1xU4y1B7AG/" target="_blank" class="project-link">视频链接</a>
           </div>
         </div>
@@ -110,7 +111,7 @@
           <div class="project-info">
             <h2>ScreenMotion: 跳一跳“外挂”</h2>
             <p class="description">一个结合计算机视觉和硬件交互项目。通过捕捉用户手机屏幕获取当前游戏状态，并利用串口通信（如UART）发送给下位机，控制舵机执行相应动作，模拟用户手指按压释放动作进行游戏。项目结合了图像处理、动作分析和硬件控制，展示了从软件到硬件的完整交互流程。</p>
-            <a href="https://github.com/Bugday001/jump-hop-skip" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/jump-hop-skip" target="_blank" class="project-link">GitHub链接</a>
             <a href="https://www.bilibili.com/video/BV1GA411n7tF" target="_blank" class="project-link">视频链接</a>
           </div>
         </div>
@@ -122,7 +123,7 @@
           <div class="project-info">
             <h2>P2PChat: 基于WebRTC的点对点通信</h2>
             <p class="description">一个基于WebRTC技术的点对点（P2P）通信实现项目，展示了如何利用WebRTC在浏览器之间建立直接的数据、音频和视频传输通道，无需依赖中间服务器。</p>
-            <a href="https://github.com/Bugday001/WebRTC-P2P" target="_blank" class="project-link">查看项目</a>
+            <a href="https://github.com/Bugday001/WebRTC-P2P" target="_blank" class="project-link">GitHub链接</a>
             <a href="https://www.bilibili.com/video/BV1oB4y1E7JP" target="_blank" class="project-link">视频链接</a>
           </div>
         </div>
